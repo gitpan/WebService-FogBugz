@@ -1,0 +1,16 @@
+Build.PL
+Changes
+example/requests.pl
+lib/WebService/FogBugz.pm
+Makefile.PL
+MANIFEST
+MANIFEST.SKIP
+META.yml			# Will be created by "make dist"
+README
+t/00.load.t
+t/01.new.t
+t/02.login.t
+t/03.logoff.t
+t/perlcritic.t
+t/pod-coverage.t
+t/pod.t
