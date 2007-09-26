@@ -1,6 +1,6 @@
 ---
 name: WebService-FogBugz
-version: 0.0.1
+version: 0.0.2
 author:
   - 'Takatsugu Shigeta <takatsugu.shigeta@gmail.com>'
 abstract: Perl interface to the FogBugz API
@@ -8,12 +8,15 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
+  LWP::UserAgent: 0
   Test::More: 0
+  XML::LibXML: 1.6
+  XML::Liberal: 0.16
   version: 0
 provides:
   WebService::FogBugz:
     file: lib/WebService/FogBugz.pm
-    version: 0.0.1
+    version: 0.0.2
 generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

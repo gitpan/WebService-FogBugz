@@ -10,6 +10,9 @@ my $builder = Module::Build->new(
     requires => {
         'Test::More' => 0,
         'version'    => 0,
+        'LWP::UserAgent' => 0,
+        'XML::Liberal' => 0.16,
+        'XML::LibXML'  => 1.60,
     },
     add_to_cleanup      => [ 'WebService-FogBugz-*' ],
 );

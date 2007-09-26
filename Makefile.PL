@@ -11,6 +11,9 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
         'version'    => 0,
+        'LWP::UserAgent' => 0,
+        'XML::Liberal' => 0.16,
+        'XML::LibXML'  => 1.60,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'WebService-FogBugz-*' },
