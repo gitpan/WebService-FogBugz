@@ -1,5 +1,9 @@
 Revision history for WebService-FogBugz
 
+0.0.3  Thu Sep 27 09:37:58 2007
+       Wrote required modules again.
+0.0.2  Thu Sep 27 02:02:31 2007
+       Wrote required modules to Build.PL and Makefile.PL.
 0.0.1  Thu Sep 20 23:43:42 2007
        Initial release.
 
