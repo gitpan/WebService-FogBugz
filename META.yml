@@ -1,26 +1,21 @@
----
-name: WebService-FogBugz
-version: 0.0.3
-author:
-  - 'Takatsugu Shigeta <takatsugu.shigeta@gmail.com>'
-abstract: Perl interface to the FogBugz API
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  LWP::UserAgent: 0
-  Test::More: 0
-  Test::Perl::Critic: 0
-  Test::Pod: 1.14
-  Test::Pod::Coverage: 1.04
-  XML::LibXML: 1.6
-  XML::Liberal: 0.16
-  version: 0
-provides:
-  WebService::FogBugz:
-    file: lib/WebService/FogBugz.pm
-    version: 0.0.3
-generated_by: Module::Build version 0.2805
+--- #YAML:1.0
+name:                WebService-FogBugz
+version:             0.0.4
+abstract:            Perl interface to the FogBugz API
+license:             ~
+author:              
+    - Takatsugu Shigeta <takatsugu.shigeta@gmail.com>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    LWP::UserAgent:                0
+    Test::More:                    0
+    Test::Perl::Critic:            0
+    Test::Pod:                     1.14
+    Test::Pod::Coverage:           1.04
+    version:                       0
+    XML::Liberal:                  0.16
+    XML::LibXML:                   1.6
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

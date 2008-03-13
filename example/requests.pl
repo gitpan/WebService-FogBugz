@@ -25,10 +25,10 @@ $fogbugz->logon;
 ###########################################
 ## Listing Cases
 # search
-#$fogbugz->request_method('search', {
-#    q => 'WebService',
-#});
-
+my $res =  $fogbugz->request_method('search', {
+    q => 'WebService',
+});
+print $res;
 
 ###########################################
 ## Editing Cases

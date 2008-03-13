@@ -7,7 +7,7 @@ use LWP::UserAgent;
 use XML::Liberal;
 use XML::LibXML;
 
-our $VERSION = '0.0.3';
+our $VERSION = '0.0.4';
 
 sub new {
     my $class = shift;
@@ -58,7 +58,7 @@ sub request_method {
     if ($self->_is_error($res->content)) {
         return;
     }
-    return $res->content, "\n";
+    return $res->content;
 }
 
 sub _is_error {

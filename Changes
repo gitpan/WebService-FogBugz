@@ -1,5 +1,8 @@
 Revision history for WebService-FogBugz
 
+0.0.4  Wed Mar 12 19:03:06 PDT 2008
+       - Fixed RT#33997 (kpower, thanks for a report)
+       - Add test code: t/04.response.t
 0.0.3  Thu Sep 27 09:37:58 2007
        Wrote required modules again.
 0.0.2  Thu Sep 27 02:02:31 2007
