@@ -1,15 +1,13 @@
-#!/usr/bin/perl
-
+#!/usr/bin/perl -w
 use strict;
-use warnings;
 
 use WebService::FogBugz;
 use Data::Dumper;
 
 my $fogbugz = WebService::FogBugz->new({
-    email => 'youremail@example.com',
-    password => 'password',
-    base_url => 'http://www.example.com/fogbugz/api.asp'
+    email       => 'youremail@example.com',
+    password    => 'password',
+    base_url    => 'http://www.example.com/fogbugz/api.asp'
 });
 
 $fogbugz->logon;

@@ -1,21 +1,48 @@
 --- #YAML:1.0
-name:                WebService-FogBugz
-version:             0.0.4
-abstract:            Perl interface to the FogBugz API
-license:             ~
-author:              
-    - Takatsugu Shigeta <takatsugu.shigeta@gmail.com>
-generated_by:        ExtUtils::MakeMaker version 6.42
-distribution_type:   module
-requires:     
-    LWP::UserAgent:                0
-    Test::More:                    0
-    Test::Perl::Critic:            0
-    Test::Pod:                     1.14
-    Test::Pod::Coverage:           1.04
-    version:                       0
-    XML::Liberal:                  0.16
-    XML::LibXML:                   1.6
+name:                       WebService-FogBugz
+version:                    0.1.0
+abstract:                   FogBugz API for Perl
+author:
+  - Barbie <barbie@cpan.org>
+  - Takatsugu Shigeta <shigeta@cpan.org>
+
+license:                    artistic_2
+distribution_type:          module
+installdirs:                site
+dynamic_config:             0
+
+requires:
+  perl:                     5.006
+  XML::LibXML:              1.60
+  XML::Liberal:             0.16
+recommends:
+  Test::CPAN::Meta:         0
+  Test::CPAN::Meta::JSON:   0
+  Test::Pod:                1.00
+  Test::Pod::Coverage:      1.00
+build_requires:
+  ExtUtils::MakeMaker:      0
+  IO::File:                 0
+  Test::More:               0.70
+configure_requires:
+  ExtUtils::MakeMaker:      0
+
+provides:
+  WebService::FogBugz:
+    file:     lib/WebService/FogBugz.pm
+    version:  0.1.0
+
+no_index:
+  directory:
+    - examples
+    - t
+
+resources:
+  license:    http://www.perlfoundation.org/artistic_license_2_0
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=WebService-FogBugz
+  repository: http://github.com/barbie/perl-WebService-FogBugz
+
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
-    version: 1.3
+   version:   1.4
+   url:       http://module-build.sourceforge.net/META-spec-v1.4.html
+generated_by: The Hand of Barbie 1.0
